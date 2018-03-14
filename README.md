@@ -7,9 +7,11 @@
   <tr>
     <th>Prowadzący</th> 
     <th>Student</th>
+    <th>Ruby / Rails </th>
     <tr>
       <td><a href="https://github.com/wbzyl">dr Włodzimierz Bzyl</a></td> 
       <td><a href="https://github.com/mikolaj-bronk">Mikołaj Bronk</a></td>
-  </tr>
+      <td>2.5.0 / 5.2.0.rc1</td>  
+</tr>
   </tr>
 </table>
