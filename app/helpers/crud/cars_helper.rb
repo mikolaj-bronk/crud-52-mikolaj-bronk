@@ -1,0 +1,2 @@
+module Crud::CarsHelper
+end

@@ -1,0 +1,7 @@
+class CarController < ApplicationController
+def index
+@cars = Car.all
+
+render json: @cars, status: :ok
+end
+end
