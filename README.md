@@ -1,24 +1,15 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Architektura Serwisów Internetowych 2018
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Crud na zaliczenie
+<table>
+  <tr>
+    <th>Prowadzący</th> 
+    <th>Student</th>
+    <tr>
+      <td><a href="https://github.com/wbzyl">dr Włodzimierz Bzyl</a></td> 
+      <td><a href="https://github.com/mikolaj-bronk">Mikołaj Bronk</a></td>
+  </tr>
+  </tr>
+</table>
