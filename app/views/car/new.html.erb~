@@ -1,0 +1,15 @@
+
+
+<div class="container"><br>
+
+
+<%= form_for @car, url:{action: "create"}, html: {class:"form"} do |s| %>
+
+
+<%= render :partial => 'form', :locals => {:s => s} %>
+
+<% end %>
+
+</div>
+
+

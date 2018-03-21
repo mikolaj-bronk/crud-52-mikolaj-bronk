@@ -1,0 +1,39 @@
+
+<div class="container"><br>
+<div class="bgtable">
+<table class="table table-bordered table-hover">
+<thead class="tbl">
+	<tr>
+		<th>Marka</th>
+		<th>Model</th>
+		<th>Rocznik</th>
+		<th>Przebieg</th>
+		<th>Obrazek</th>
+		<th>Edytuj</th>
+		<th>Usuń</th>
+	</tr>
+</thead>
+
+
+<% @car.each do |c| %>
+<tr><td>
+<%= c.marka %></td><td>
+<%= c.model %></td><td>
+<%= c.rocznik %></td><td>
+<%= c.przebieg %></td><td>
+<img width="150" src="<%= c.obrazek %>"></td><td>
+
+<div class="btn btn-edit besos2 btn-wid">
+<%= link_to "Edytuj", controller: "car", action: "edit", id:c.id, :class => "btn" %> </td><td></div>
+<div class="btn btn-del besos btn-wid">
+<%= link_to "Usuń", c, method: :delete, data: {confirm: 'Czy jesteś pewny?'}, :class => "btn" %></td></td></div>
+</tr>
+<% end %>
+</table>
+<div class="btn btn-cr besos">
+<%= link_to "Dodaj nowy", controller: "car", action: "new", :class => "btn" %>
+</div>
+
+
+</div>
+</div>

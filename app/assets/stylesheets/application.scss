@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import "bootstrap";
+
+.headerek{
+color: black;
+}
+
+.navbar-br{
+border-bottom: solid gray 1px;
+background-color: rgba(0,0,0,0.5);
+}
+
+.tbl{
+background-color: rgba(0,0,0,0.05);
+}
+
+.besos a:link{
+text-decoration: none;
+color: white;
+}
+
+
+.besos a:link{
+text-decoration: none;
+color: white;
+}
+.besos a:visited{
+text-decoration: none;
+color: white;
+}
+
+.besos2{
+padding-top: -4px;
+
+}
+
+.besos2 a:link{
+text-decoration: none;
+color: #414240;
+}
+.besos2 a:visited{
+text-decoration: none;
+color: #414240;
+}
+
+.btn-wid{
+width: 100px;
+height: 50px;
+}
+
+.btn-edit{
+background-color: #eae19e;
+}
+
+.btn-del{
+background-color: #cc637c;
+}
+.btn-cr{
+background-color: #92c768;
+}
+
+
+
+.bgtable{
+padding-top: 20px;
+padding-bottom: 20px;
+margin: 0 auto;
+text-align: center;
+width: 1000px;
+background-color: rgba(255,255,255,1);
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+
+}
+
+body{
+padding-top: 50px;
+background-image: url('background.jpg');
+background-position: center top;
+background-attachment: fixed;
+}

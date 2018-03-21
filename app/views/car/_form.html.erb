@@ -1,0 +1,20 @@
+<div style="width: 50%; text-align:center; margin: 0 auto;">
+<%= "<div class=\"alert alert-danger\">#{@car.errors.full_messages.first}</div>".html_safe if @car.errors.any? %>
+<%= s.label(:marka) %><%= s.text_field :marka, class: "form-control"%>
+<br>
+<%= s.label(:model) %>
+<%= s.text_field :model, class: "form-control" %>
+<br>
+<%= s.label(:rocznik) %>
+<%= s.text_field :rocznik, class: "form-control" %>
+<br>
+<%= s.label(:przebieg) %>
+<%= s.text_field :przebieg, class: "form-control" %>
+<br>
+<%= s.label(:obrazek) %>
+<%= s.text_field :obrazek, class: "form-control" %>
+<br>
+</div>
+
+<%= s.submit "Zapisz", :class => "btn btn-cr besos" %>
+

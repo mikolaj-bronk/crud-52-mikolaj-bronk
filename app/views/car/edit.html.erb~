@@ -1,0 +1,16 @@
+
+<div class="container"><br>
+<div class="bgtable">
+Edytujesz:
+<%= form_for @car, url:{action: "update"}, html: {class:"form"} do |s| %>
+
+
+<%= render :partial => 'form', :locals => {:s => s} %>
+
+<% end %>
+
+</div>
+</div>
+
+
+
