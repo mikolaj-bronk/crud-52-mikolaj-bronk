@@ -2,7 +2,7 @@
 # Architektura Serwisów Internetowych 2018
 
 
-## Crud na zaliczenie
+## Crud na zaliczenie - Aplikacja przechowująca samochody dla prywatnych kolekcjonerów
 <table>
   <tr>
     <th>Prowadzący</th> 
@@ -17,3 +17,20 @@
 </tr>
   </tr>
 </table>
+
+Opcje: 
+- Dodawanie samochodu
+- Edycja samochodu
+- Usuwanie samochodu
+
+Validacja:
+- Pola nie mogą być puste
+- Pola mogą mieć maksymalnie 30 znaków (poza linkiem do obrazka)
+- Obrazek musi być w formacie jpg lub png 
+- Przebieg i rocznik musi mieć wartość numeryczną
+- Rocznik i przebieg nie może być wartością ujemną
+- Rok produkcji samochodu nie może być nowszy niż aktualny rok
+
+Wady:
+- Aplikacja nie przechowuje obrazków na serwerze
+
