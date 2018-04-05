@@ -18,12 +18,12 @@
   </tr>
 </table>
 
-Opcje: 
+#Opcje: 
 - Dodawanie samochodu
 - Edycja samochodu
 - Usuwanie samochodu
 
-Validacja:
+#Validacja:
 - Pola nie mogą być puste
 - Pola mogą mieć maksymalnie 30 znaków (poza linkiem do obrazka)
 - Obrazek musi być w formacie jpg lub png 
@@ -31,6 +31,6 @@ Validacja:
 - Rocznik i przebieg nie może być wartością ujemną
 - Rok produkcji samochodu nie może być nowszy niż aktualny rok
 
-Wady:
+#Wady:
 - Aplikacja nie przechowuje obrazków na serwerze
 
