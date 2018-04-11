@@ -5,4 +5,13 @@ validates :obrazek, format: { with: /\A.+\.(([pP][nN][gG])|([jJ][pP][gG]))\z/, m
 validates :przebieg, :rocznik, numericality: { only_integer: true, message: " - to pole musi mieć wartość numeryczną" } 
 validates :rocznik, :przebieg, numericality: { greater_than: 0, message: " - to pole musi być nieujemne" } 
 validates :rocznik, numericality: { less_than: 2018, message: " - zły rocznik" } 
+
+def self.search(term, page)
+ if term
+   where('model LIKE ?', "%#{term}%").paginate(page: page, per_page: 5).order('id DESC')
+ else
+   paginate(page: page, per_page: 5).order('id DESC')
+ end
+end
+
 end

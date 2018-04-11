@@ -1,6 +1,11 @@
 
 <div class="container"><br>
 <div class="bgtable">
+Wyszukaj marka lub model<%= form_tag(@cars, method: :get) do %>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag 'Szukaj', name: nil %>
+  <% end %>
+<br>
 <table class="table table-bordered table-hover">
 <thead class="tbl">
 	<tr>
@@ -15,7 +20,7 @@
 </thead>
 
 
-<% @car.each do |c| %>
+<% for c in @car %>
 <tr><td>
 <%= c.marka %></td><td>
 <%= c.model %></td><td>
@@ -29,11 +34,19 @@
 <%= link_to "Usuń", c, method: :delete, data: {confirm: 'Czy jesteś pewny?'}, :class => "btn" %></td></td></div>
 </tr>
 <% end %>
-</table>
+</table> 
+
 <div class="btn btn-cr besos">
 <%= link_to "Dodaj nowy", controller: "car", action: "new", :class => "btn" %>
 </div>
 
+<div class="apple_pagination">
+  <div class="page_info">
+    <%= page_entries_info @cars %>
+  </div>
+  <%= will_paginate @cars, :container => false %>
+</div>
 
 </div>
 </div>
+
