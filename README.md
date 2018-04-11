@@ -18,12 +18,14 @@
   </tr>
 </table>
 
-# Opcje: 
+# Możliwości 
 - Dodawanie samochodu
 - Edycja samochodu
 - Usuwanie samochodu
+- Wyszukiwanie po marce lub modelu
+- Wyswietlanie samochodów po 5 na stronę (paginacja)
 
-# Validacja:
+# Walidacja:
 - Pola nie mogą być puste
 - Pola mogą mieć maksymalnie 30 znaków (poza linkiem do obrazka)
 - Obrazek musi być w formacie jpg lub png 
